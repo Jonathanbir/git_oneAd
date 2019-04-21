@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*以下是個人喜好*/
+/*圖片隨容器寬變化、去除圖片縫隙*/
+img {
+  width: 100%;
+  vertical-align: bottom; }
+
+/*連結消除底線、字體顏色改為黑色*/
+a {
+  text-decoration: none;
+  color: black; }
+
+.wrapper {
+  max-width: 960px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px; }
+
+.news-body img {
+  max-width: 960px;
+  margin: 0 auto; }
+
+#onead-news {
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+  background: rgba(66, 66, 66, 0.6); }
+  #onead-news video {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    cursor: pointer; }
+  #onead-news #news {
+    position: relative;
+    background: url("/images/asset2.png");
+    background-size: cover;
+    margin-left: 21px;
+    margin-right: 21px;
+    background-color: #aaa; }
+  #onead-news #close-btn {
+    width: 50px;
+    height: 55px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99; }
+  #onead-news #playButton {
+    background: url("/images/asset6.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 80px;
+    z-index: 99; }
+  #onead-news #linkButton {
+    background: url("/images/asset7.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20%;
+    top: 80px;
+    z-index: 99;
+    width: 100px;
+    height: 100px; }
+  #onead-news #mutedButton {
+    position: absolute;
+    left: 0;
+    top: 34%;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 6%;
+    height: 3%;
+    border-radius: 5px;
+    background-color: rgba(157, 157, 157, 0.5);
+    transform: rotate(180deg); }
+    #onead-news #mutedButton .bar {
+      transition: all .2s;
+      width: 18%;
+      height: 10%;
+      background: linear-gradient(#bdbcbc, #393939);
+      opacity: .8; }
