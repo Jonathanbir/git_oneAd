@@ -90,7 +90,7 @@ a {
     cursor: pointer; }
   #onead-news #news {
     position: relative;
-    background: url("/images/asset2.png");
+    background-image: url("../images/asset2.png");
     background-size: cover;
     margin-left: 21px;
     margin-right: 21px;
@@ -103,7 +103,7 @@ a {
     top: 0;
     z-index: 99; }
   #onead-news #playButton {
-    background: url("/images/asset6.png");
+    background-image: url("../images/asset6.png");
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
@@ -112,7 +112,7 @@ a {
     top: 80px;
     z-index: 99; }
   #onead-news #linkButton {
-    background: url("/images/asset7.png");
+    background-image: url("../images/asset7.png");
     background-repeat: no-repeat;
     position: absolute;
     right: 20%;
