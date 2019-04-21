@@ -78,15 +78,16 @@ function closeNews(){
 //播放廣告影片
 
 //靜音linear-gradient(yellow,red)
-
+var flag =true;
 function muted(){
     //終止預設行為
     // console.log("2u03");
     event.preventDefault();
     //終止事件傳導
     event.stopPropagation();
-
-	if(myMovie.volume !=0 ){
+    flag = !flag;
+    myMovie.muted = flag;
+	if(flag){
 		originVolume=myMovie.volume;
 		console.log('originVolume='+originVolume);
 		myMovie.volume=0;
