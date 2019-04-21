@@ -9,13 +9,13 @@ table{border-collapse:collapse;border-spacing:0}
 img{width:100%;vertical-align:bottom}
 a{text-decoration:none;color:#000}
 .wrapper{max-width:960px;position:relative;top:0;bottom:0;right:0;left:0;width:100%;margin:25px auto 0}
-#onead-news #linkButton,#onead-news #playButton{top:80px;width:100px;height:100px;position:absolute;z-index:99}
+#onead-news #linkButton,#onead-news #playButton{background-repeat:no-repeat;top:80px;width:100px;height:100px;position:absolute;z-index:99}
 .news-body img{max-width:960px;margin:0 auto}
 #onead-news{width:100%;height:100%;max-width:768px;position:fixed;top:0;z-index:999999999;background:rgba(66,66,66,.6)}
 #onead-news video{position:absolute;top:35px;left:0;right:0;margin:auto;z-index:10;cursor:pointer}
-#onead-news #news{position:relative;background:url(/images/asset2.png) #aaa;background-size:cover;margin-left:21px;margin-right:21px}
+#onead-news #news{position:relative;background-image:url(../images/asset2.png);background-size:cover;margin-left:21px;margin-right:21px;background-color:#aaa}
 #onead-news #close-btn{width:50px;height:55px;position:absolute;right:0;top:0;z-index:99}
-#onead-news #playButton{background:url(/images/asset6.png) no-repeat;left:20%}
-#onead-news #linkButton{background:url(/images/asset7.png) no-repeat;right:20%}
+#onead-news #playButton{background-image:url(../images/asset6.png);left:20%}
+#onead-news #linkButton{background-image:url(../images/asset7.png);right:20%}
 #onead-news #mutedButton{position:absolute;left:0;top:34%;z-index:99;display:flex;flex-direction:row;justify-content:space-between;width:6%;height:3%;border-radius:5px;background-color:rgba(157,157,157,.5);transform:rotate(180deg)}
 #onead-news #mutedButton .bar{transition:all .2s;width:18%;height:10%;background:linear-gradient(#bdbcbc,#393939);opacity:.8}
